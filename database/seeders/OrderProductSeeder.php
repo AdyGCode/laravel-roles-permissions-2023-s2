@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\OrderProduct;use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\OrderProduct;
 use Illuminate\Database\Seeder;
 
 class OrderProductSeeder extends Seeder
@@ -14,32 +14,16 @@ class OrderProductSeeder extends Seeder
     {
         $seedOrderDetails = [
             [
-                'id' => null,
-                'order_id' => 1001,
-                'product_id' => 101,
-                'sale_price'=>1000,
-                'quantity'=>1,
+                'id' => null, 'order_id' => 1001, 'product_id' => 101, 'sale_price' => 1000, 'quantity' => 1,
             ],
             [
-                'id' => null,
-                'order_id' => 1001,
-                'product_id' =>103,
-                'sale_price'=>2000,
-                'quantity'=>3,
+                'id' => null, 'order_id' => 1001, 'product_id' => 103, 'sale_price' => 2000, 'quantity' => 3,
             ],
             [
-                'id' => null,
-                'order_id' => 1002,
-                'product_id' => 101,
-                'sale_price'=>1500,
-                'quantity'=>1,
+                'id' => null, 'order_id' => 1002, 'product_id' => 101, 'sale_price' => 1500, 'quantity' => 1,
             ],
             [
-                'id' => null,
-                'order_id' => 1003,
-                'product_id' => 104,
-                'sale_price'=>2500,
-                'quantity'=>3,
+                'id' => null, 'order_id' => 1003, 'product_id' => 104, 'sale_price' => 2500, 'quantity' => 3,
             ],
 
         ];

@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Order;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class OrderSeeder extends Seeder
@@ -15,24 +14,16 @@ class OrderSeeder extends Seeder
     {
         $seedOrders = [
             [
-                'id'=>1001,
-                'name' => 'Order 1',
-                'notes' => 'An order',
+                'id' => 1001, 'name' => 'Order 1', 'notes' => 'An order',
             ],
             [
-                'id'=>null,
-                'name' => 'Order 2',
-                'notes' => 'A second order',
+                'id' => null, 'name' => 'Order 2', 'notes' => 'A second order',
             ],
             [
-                'id'=>null,
-                'name' => 'Order 3',
-                'notes' => 'Is this really an order',
+                'id' => null, 'name' => 'Order 3', 'notes' => 'Is this really an order',
             ],
             [
-                'id'=>null,
-                'name' => 'Order 4',
-                'notes' => '',
+                'id' => null, 'name' => 'Order 4', 'notes' => '',
             ],
 
         ];
