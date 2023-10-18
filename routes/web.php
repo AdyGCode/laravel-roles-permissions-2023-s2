@@ -22,12 +22,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('orders', OrderController::class);
 
 Route::middleware('auth')->group( function(){
+    Route::resource('orders', OrderController::class);
+    Route::resource('products', ProductController::class);
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
-    Route::resource('products', ProductController::class);
 });
 
 Route::get('/dashboard', function () {

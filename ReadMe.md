@@ -10,8 +10,18 @@ php artisan make:controller UserController --resource
 ### For many to many demo
 ```shell
 php artisan make:model Order -ars
-php artisan make:model OrderProduct -ars
+php artisan make:model OrderProduct -ars --pivot
 
+```
+
+If you have not used the `--pivot` argument, then you are able to modify the model to suit. 
+
+The example below is the OrderProduct model with the required Pivot Information:
+
+```php
+use Illuminate\Database\Eloquent\Relations\Pivot;
+
+class OrderProduct extends Pivot
 ```
 
 Check the code for Orders etc. The seeders have been split into separate steps.
