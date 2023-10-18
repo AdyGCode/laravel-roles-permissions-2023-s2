@@ -21,6 +21,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             ProductSeeder::class,
+            OrderSeeder::class,
+            OrderProductSeeder::class,
+
             // Make sure you seed Permissions first
             PermissionTableSeeder::class,
             // If the application had known roles, these could be seeded next

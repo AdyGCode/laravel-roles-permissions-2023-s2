@@ -36,4 +36,10 @@ class Product extends Model
     protected $casts = [
 
     ];
+
+
+    public function orders()
+    {
+        return $this->belongsToMany(Order::class)->withTimestamps();
+    }
 }
